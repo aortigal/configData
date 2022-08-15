@@ -3,10 +3,20 @@ server:
   
 eureka:
   client:
-    service-url:
+    serviceUrl:
       defaultZone: http://localhost:8761/eureka
       
   instance:
     hostname: localhost
     prefer-ip-address: true
       
+spring:
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/spring_boot
+
+app:
+  module:
+    client:
+      service:
+        url: http://localhost:8080
