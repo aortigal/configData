@@ -9,11 +9,6 @@ eureka:
   instance:
     hostname: localhost
     prefer-ip-address: true
-    
-spring:
-  data:
-    mongodb:
-      uri: mongodb://localhost:27017/spring_boot
       
 app:
   module:
