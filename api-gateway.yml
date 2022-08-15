@@ -14,7 +14,7 @@ spring:
           enabled: true
       routes:
         - id: ms_parameter
-          uri: http://localhost:8087/
+          uri: http://localhost:8087
           predicates:
             - Path=/api/parameter/**
         - id: person
