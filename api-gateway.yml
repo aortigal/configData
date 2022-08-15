@@ -25,7 +25,7 @@ spring:
           uri: http://localhost:8082
           predicates:
             - Path=/api/pasive/**
-        - id: active
+        - id: ms-active
           uri: http://localhost:8083
           predicates:
             - Path=/api/active/**
@@ -41,7 +41,7 @@ spring:
           uri: http://localhost:8086
           predicates:
             - Path=/api/transaction/**
-        - id: parameter
+        - id: ms-parameter
           uri: http://localhost:8087
           predicates:
             - Path=/api/parameter/**
