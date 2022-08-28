@@ -23,4 +23,4 @@ kafka:
   bootstrapAddress: "localhost:9092"
   topic:
     payment: "yanki-payment-topic"
-    group-id: "yanki-payment_id"
+    groupId: "yanki-payment_id"
