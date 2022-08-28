@@ -15,12 +15,11 @@ spring:
     mongodb:
       uri: mongodb://localhost:27017/bd_yanki
 
-kafka:
-  topic:
-    payment: "yanki-payment-topic"
-    
-spring:
   kafka:
     bootstrap-servers:  "localhost:9092"
     consumer:
-      group-id: "yanki-payment_id"
+      group-id: "yanki-payment_id" 
+      
+kafka:
+  topic:
+    payment: "yanki-payment-topic"
