@@ -1,0 +1,21 @@
+server:
+  port: 8073
+  
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+      
+  instance:
+    hostname: localhost
+    prefer-ip-address: true
+
+spring:
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/bd_yanki
+
+kafka:
+  bootstrapAddress: "localhost:9092"
+  topic:
+    payment: "yanki-transaction-topic"
