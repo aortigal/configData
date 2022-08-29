@@ -4,19 +4,19 @@ server:
 eureka:
   client:
     service-url:
-      defaultZone: http://localhost:8761/eureka
+      defaultZone: http://host.docker.internal:8761/eureka
       
   instance:
-    hostname: localhost
+    hostname: host.docker.internal
     prefer-ip-address: true
 
 spring:
   data:
     mongodb:
-      uri: mongodb://localhost:27017/bd_yanki
+      uri: mongodb://host.docker.internal:27017/bd_yanki
 
   kafka:
-    bootstrap-servers:  "localhost:9092"
+    bootstrap-servers:  "host.docker.internal:9092"
     consumer:
       group-id: "yanki-payment_id" 
       

@@ -3,4 +3,9 @@ server:
 
 eureka:
   instance:
-    hostname: localhost
+    hostname: host.docker.internal
+
+eureka:
+  client:
+    fetchRegistry: 'false'
+    registerWithEureka: 'false'
