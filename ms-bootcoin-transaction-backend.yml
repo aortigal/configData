@@ -13,9 +13,9 @@ eureka:
 spring:
   data:
     mongodb:
-      uri: mongodb://host.docker.internal:27017/bd_bootcoin
+      uri: mongodb://127.0.0.1:27017/bd_bootcoin
 
 kafka:
-  bootstrapAddress: "host.docker.internal:9092"
+  bootstrapAddress: "127.0.0.1:9092"
   topic:
     transaction: "bootcoin-transaction-topic"

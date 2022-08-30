@@ -13,4 +13,4 @@ eureka:
 spring:
   data:
     mongodb:
-      uri: mongodb://host.docker.internal:27017/spring_boot
+      uri: mongodb://127.0.0.1:27017/bank

@@ -13,10 +13,10 @@ eureka:
 spring:
   data:
     mongodb:
-      uri: mongodb://host.docker.internal:27017/bd_yanki
+      uri: mongodb://127.0.0.1:27017/bd_yanki
 
   kafka:
-    bootstrap-servers:  "host.docker.internal:9092"
+    bootstrap-servers:  "127.0.0.1:9092"
     consumer:
       group-id: "yanki-payment_id" 
       
