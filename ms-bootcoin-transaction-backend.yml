@@ -1,0 +1,21 @@
+server:
+  port: 8061
+  
+eureka:
+  client:
+    service-url:
+      defaultZone: http://host.docker.internal:8761/eureka
+      
+  instance:
+    hostname: host.docker.internal
+    prefer-ip-address: true
+
+spring:
+  data:
+    mongodb:
+      uri: mongodb://host.docker.internal:27017/bd_bootcoin
+
+kafka:
+  bootstrapAddress: "host.docker.internal:9092"
+  topic:
+    transaction: "bootcoin-transaction-topic"
