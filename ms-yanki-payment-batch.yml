@@ -21,5 +21,7 @@ spring:
       group-id: "yanki-payment_id" 
       
 kafka:
+  bootstrapAddress: "127.0.0.1:9092"
   topic:
     payment: "yanki-payment-topic"
+    wallet: "yanki-wallet-topic"
