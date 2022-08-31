@@ -21,6 +21,7 @@ spring:
       group-id: "bootcoin-transaction_id" 
       
 kafka:
+  bootstrapAddress: "127.0.0.1:9092"
   topic:
     yanki: "bootcoin-transfer-yanki-topic"
     transaction: "bootcoin-transaction-topic"
