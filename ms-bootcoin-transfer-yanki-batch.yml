@@ -26,3 +26,4 @@ kafka:
     yanki: "bootcoin-transfer-yanki-topic"
     transactionBootCoin: "bootcoin-transaction-topic"
     transactionYanki: "yanki-transaction-topic"
+    paymentYanki: "yanki-payment-topic"
