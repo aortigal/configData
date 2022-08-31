@@ -45,3 +45,23 @@ spring:
           uri: http://host.docker.internal:8087
           predicates:
             - Path=/api/parameter/**
+        - id: ms-yanki-customer-backend
+          uri: http://host.docker.internal:8070
+          predicates:
+            - Path=/api/yanki/customer/**
+        - id: ms-yanki-payment-backend
+          uri: http://host.docker.internal:8071
+          predicates:
+            - Path=/api/yanki/payment/**
+        - id: ms-yanki-transaction-backend
+          uri: http://host.docker.internal:8073
+          predicates:
+            - Path=/api/yanki/transaction/**
+        - id: ms-bootcoin-customer-backend
+          uri: http://host.docker.internal:8060
+          predicates:
+            - Path=/api/bootcoin/customer/**
+        - id: ms-bootcoin-transaction-backend
+          uri: http://host.docker.internal:8061
+          predicates:
+            - Path=/api/bootcoin/transaction/**
