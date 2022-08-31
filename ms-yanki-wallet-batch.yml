@@ -1,5 +1,5 @@
 server:
-  port: 8070
+  port: 8075
   
 eureka:
   client:
@@ -9,13 +9,17 @@ eureka:
   instance:
     hostname: host.docker.internal
     prefer-ip-address: true
-    
+
 spring:
   data:
     mongodb:
       uri: mongodb://127.0.0.1:27017/bd_yanki
+
+  kafka:
+    bootstrap-servers:  "127.0.0.1:9092"
+    consumer:
+      group-id: "yanki-wallet_id" 
       
 kafka:
-  bootstrapAddress: "127.0.0.1:9092"
   topic:
     wallet: "yanki-wallet-topic"
