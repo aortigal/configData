@@ -1,5 +1,5 @@
 server:
-  port: 8060
+  port: 8070
   
 eureka:
   client:
@@ -14,9 +14,8 @@ spring:
   jpa:
     hibernate: 
       ddl-auto: none
-  data:
-    mongodb:
-      uri: mongodb://127.0.0.1:27017/bd_bootcoin
-      username: root
-      password: s3cr3ct
-      driver-class-name: com.mysql.jdbc.Driver      
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/bd_bank
+    username: root
+    password: s3cr3ct
+    driver-class-name: com.mysql.cj.jdbc.Driver 
