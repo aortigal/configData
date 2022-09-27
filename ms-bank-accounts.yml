@@ -10,3 +10,12 @@ eureka:
     hostname: host.docker.internal
     prefer-ip-address: true
     
+spring:
+  jpa:
+    hibernate: 
+      ddl-auto: none
+  datasource:
+    url: jdbc:mysql://host.docker.internal:3306/bd_bank
+    username: root
+    password: s3cr3ct
+    driver-class-name: com.mysql.cj.jdbc.Driver 
