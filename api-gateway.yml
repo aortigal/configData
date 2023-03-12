@@ -68,4 +68,4 @@ spring:
         - id: jwt
           uri: http://host.docker.internal:8090
           predicates:
-            - Path=/oauth/**
+            - Path=/auth/**
