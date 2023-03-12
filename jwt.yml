@@ -1,0 +1,11 @@
+server:
+  port: 8090
+  
+eureka:
+  client:
+    service-url:
+      defaultZone: http://host.docker.internal:8761/eureka
+      
+  instance:
+    hostname: host.docker.internal
+    prefer-ip-address: true
