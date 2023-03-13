@@ -65,7 +65,3 @@ spring:
           uri: http://host.docker.internal:8061
           predicates:
             - Path=/api/bootcoin/transaction/**
-        - id: jwt
-          uri: http://host.docker.internal:8090
-          predicates:
-            - Path=/auth/**
